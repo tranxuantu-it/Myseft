@@ -1,0 +1,365 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html {
+    scroll-behavior:smooth;
+}
+body {
+    line-height: 1;
+    opacity: 0;
+    animation: name 4s forwards;
+}
+@keyframes name {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* > a {
+    text-decoration: none;
+}
+.container {
+    background-image: url(img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+.container > #tab-bar > #menu > li > a{
+    padding: 0px 10px;
+    color: white;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container > #tab-bar > h1 {
+    display: inline-block;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 3px 5px;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+.container > #tab-bar > h1:hover {
+    background-color: white;
+}
+.container > #tab-bar > h1:hover > a{
+    color: #087D90;
+}
+.container > #tab-bar > h1 > a {
+    color: white;
+}
+.container > #tab-bar {
+    margin-left: 200px;
+    margin-right: 200px;
+    height: 50px;
+    line-height: 40px;
+}
+.container > #tab-bar > #menu {
+   float: right;
+}
+.container > #tab-bar > #menu > li {
+    display: inline-block;
+    margin: 5px 5px;
+}
+.container > #tab-bar > #menu > li:hover {
+    background-color: white;
+    border-radius: 5px;
+}
+.container > #tab-bar > #menu > li:hover a {
+    color: #087D90;
+}
+.container >  #yourseft {
+    margin: 50px 200px 0px 200px;
+    display: flex;
+    justify-content: space-around;
+}
+.container  #yourseft > #img-yourseft {
+    background-image: url(img/1.jpg);
+    height: 400px;
+    min-width: 400px;
+    background-repeat: no-repeat;
+    background-position: -225px -635px;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+.container >  #yourseft > #content-yourseft {
+    margin: 100px 0px 0px 50px;
+}
+.container >  #yourseft > #content-yourseft > h1 {
+    display: inline-block;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-bottom: 20px;
+    animation-name: Myname;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes Myname {
+    20% {
+        color: rgb(58, 255, 74);
+    }
+    40% {
+        color: white;
+    }
+    60% { 
+        color: red;
+    }
+    80% {
+        color: gold;
+    }
+    100% {
+        color: black;
+    }
+}
+.container >  #yourseft > #content-yourseft > p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container >  #yourseft > #content-yourseft > #job-content {
+    font-size: 20px;
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 40px;
+}
+.container >  #yourseft > #content-yourseft > #content-introduce {
+    height: 23px;
+    line-height: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container >  #yourseft > #content-yourseft > #profile-links {
+    margin-top: 40px;
+}
+.container >  #yourseft > #content-yourseft > #profile-links > li {
+    float: left;
+}
+.container >  #yourseft > #content-yourseft > #profile-links > li > a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #ebebeb;
+    margin-right: 15px;
+}
+.container >  #yourseft > #content-yourseft > #profile-links > li:first-child > a{
+    width: 220px;
+    border-radius: 30px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(204,205,208);
+}
+.container >  #yourseft > #content-yourseft > #profile-links > li:not(:first-child) > a > span{
+    display: none;   
+}
+.container >  #yourseft > #content-yourseft > #profile-links > li > a > i {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    line-height: 50px;
+    text-align: center;
+}
+.container >  #yourseft > #content-yourseft > #profile-links > li > a {
+    background-color: #797979;
+    color: white;
+}
+.container >  #yourseft > #content-yourseft > #profile-links > li:nth-child(1) > a {
+    background-color: white ;
+    color:#797979;
+}
+.container >  #yourseft > #content-yourseft > #profile-links > li:nth-child(1) > a:hover {
+    background-color: #cdcdcd;
+    color: black;
+}
+.container >  #yourseft > #content-yourseft > #profile-links > li:nth-child(2) > a:hover {
+    background-color: #007bff;
+}
+.container >  #yourseft > #content-yourseft > #profile-links > li:nth-child(3) > a:hover {
+    background-color: #e0e0e0;
+    color: rgb(247, 39, 39);
+}
+.container >  #yourseft > #content-yourseft > #profile-links > li:nth-child(4) > a:hover {
+    background-color: #e0e0e0;
+    color: rgb(250, 164, 34);
+}
+main#content  {
+    margin: 0px 200px;
+    background-color: #E9EBEE;
+}
+.title {
+    font-size: 40px;
+    text-align: center;
+    padding: 40px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#content > #introduce {
+    margin-bottom: 40px;
+}
+#content > #introduce > ul > li {
+    width: 600px;
+    line-height: 30px;
+    padding: 15px 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+#content > #introduce > ul > li:nth-child(even) {
+    float: right;
+}
+#content > #introduce > ul > li:nth-child(odd) {
+    float: left;
+}
+#content > #infor-contact {
+    border-top: 1px solid #d6d6d6;
+    margin-bottom: 60px;
+}
+#content > #infor-contact > ul {
+    width: 1000px !important;
+    display: flex;
+    margin: 0px auto;
+    flex-wrap: wrap;
+    width: 1200px;
+    
+}
+#content > #infor-contact > ul > li {
+    flex-basis: 300px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin: 5px;   
+    flex-grow: 1;
+  
+}
+#content > #infor-contact > ul > li > a {
+    background-color: rgb(19, 124, 119);
+    display: inline-block;
+    color: white;
+    height: 50px;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+#content > #infor-contact > ul > li > a:hover {
+    background-color:#004249;
+    color: white;
+}
+#content > .about-my-job {
+    border-top: 1px solid #d6d6d6;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    padding: 40px 0px;
+}
+#content > .about-my-job:nth-last-child(2n) {
+    flex-direction: row;
+}
+#content > .about-my-job > div > p {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 35px;
+}
+#content > .about-my-job > div:first-child {
+    flex-basis: 700px;
+}
+#content > #contact {
+   border-top: 1px solid #d6d6d6;
+}
+#content > #contact > div {
+    display: flex;
+    width: 100%;
+}
+#content > #contact > div > ul {
+    flex-grow: 1;
+}
+#content > #contact > div > div {
+    flex-grow: 3;
+}
+#content > #contact > div > ul > li,
+#content > #contact > div > ul > li > a {
+    color: black;
+    font-size: 20px;
+    line-height: 30px;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#content > #contact > div > ul > li {
+    margin: 30px 0px 0px 50px;
+}
+#content > #contact > div > ul > li i {
+    padding-right: 15px ;
+}
+#content > #contact > div > ul > li > a > i,
+#content > #contact > div > ul > li > i {
+    font-size: 40px;
+    line-height: 30px;
+}
+#content > #contact > div > ul > li > a:hover,
+footer > #container-footer > div > ul > li > a:hover {
+    text-decoration: underline;
+}
+footer {
+    background-color:#2B2B2B;
+    height: 300px;
+}
+footer > #container-footer {
+    margin: 0px 200px;
+    display: flex;
+    justify-content: space-around;
+}
+footer > #container-footer > div {
+    flex-grow: 1;
+    margin: 40px;
+}
+footer > #container-footer > div > h4 {
+    font-size: 25px;
+    color: #ebebeb;
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer > #container-footer > div > ul {
+    margin-top: 30px;
+}
+footer > #container-footer > div > ul > li > a {
+    font-size: 15px;
+    color: #ebebeb;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+}
